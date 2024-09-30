@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Desenvolvimento de formulário com a tabela</title>
+</head>
+<body>
+ <h1>Atividade de Formulário - Teams</h1>
+ <hr>
+ <p>Desenvolvimento de formulário com a tabela</p>
+ <buttonform id="linhaForm">
+  <input type="text" name="id" id="id" placeholder="Digite seu id" requi red>
+  <br><br>
+  <input type="text" name="produto" id="produto" placeholder="Digite o nome do produto" required>
+  <br><br>
+  <input type="text" name="marca" id="marca" placeholder="Digite o nome da marca" required>
+  <br><br>
+  <input type="text" name="segmento" id="segmento" placeholder="Digite o nome do segmento" required>
+  <br><br>
+  <input type="number" name="valor" id="valor" placeholder="Digite o valor do produto" required>
+  <br><br>
+  <input type="date" name="venda" id="venda" required>
+  <input type="button" onclick="adicionarLinha()">Adicionar</button>
+ </form>
+ <br><br>
+ 
+ <table id="tabelaDados">
+  <thead>
+   <tr>
+    <th>Id</th>
+    <th>Produto</th>
+    <th>Marca</th>
+    <th>Segmento</th>
+    <th>Valor</th>
+    <th>Data da Venda</th>
+   </tr>
+  </thead>
+ </table>
+ <script src="./script.js"></script>
+</body>
+</html>
