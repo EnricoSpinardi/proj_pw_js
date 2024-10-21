@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+ <h1>Formulário em JavaScript</h1>
+    <hr>
+    <form id="linhaForm">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <br><br>
+        <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
+        <br><br>
+        <label for="admissao" class="col-sm-2 col-form-label">Admissão</label>
+        <br><br>
+        <input type="date" name="admissao" id="admissao" required>
+        <br><br>
+        <label for="demissao" class="col-sm-2 col-form-label">Demissão</label>
+        <br><br>
+        <input type="date" name="demissao" id="demissao">
+        <br><br>
+        <button type="button" class="btn btn-primary" onclick="adicionarLinha()">Adicionar</button>
+    </form>
+    <br><br>
+    <table  class="table table-bordered" id="tabelaDados">
+        <thead>
+            <tr>
+             <th scope="col">Id</th>
+             <th scope="col">Nome</th>
+             <th scope="col">Idade</th>
+             <th scope="col">Admissão</th>
+             <th scope="col">Demissão</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <script src="./js/formulário.js"></script>
+</body>
+</html>
