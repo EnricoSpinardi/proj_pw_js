@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>Formulário</title>
  <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
+<body class="$gray-900">
  <h1>Formulário em JavaScript</h1>
     <hr>
-    <form id="linhaForm">
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+    <div class="container">
+    <div class="row g-3">
+        <div id="linhaForm">
+            <div class="col">
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control" aria-label="Digite seu nome" required>
         <br><br>
-        <input type="number" name="idade" id="idade" placeholder="DIgite sua idade" required>
+        </div>
+        <div class="col">
+        <input type="number" name="idade" id="idade" placeholder="Digite sua idade" class="form-control" aria-label="Digite sua idade" required>
         <br><br>
-        <label for="admissao" class="col-sm-2 col-form-label">Admissão</label>
+        <label for="admissao" class="col-sm-2 col-form-label col-form-label-lg">Admissão</label>
         <br><br>
-        <input type="date" name="admissao" id="admissao" required>
+        <div class="col">
+        <input type="date" name="admissao" id="admissao" class="form-control" aria-label="admissao" required>
         <br><br>
-        <label for="demissao" class="col-sm-2 col-form-label">Demissão</label>
+        </div>
+        <label for="demissao" class="col-sm-2 col-form-label col-form-label-lg">Demissão</label>
         <br><br>
-        <input type="date" name="demissao" id="demissao">
+        <div class="col">
+        <input type="date" name="demissao" id="demissao" class="form-control" aria-label="demissao">
         <br><br>
+        </div>
+        <div class="col">
         <button type="button" class="btn btn-primary" onclick="adicionarLinha()">Adicionar</button>
+            </div>
+        </div>
     </form>
     <br><br>
     <table  class="table table-bordered" id="tabelaDados">
@@ -33,7 +45,7 @@
              <th scope="col">Idade</th>
              <th scope="col">Admissão</th>
              <th scope="col">Demissão</th>
-            </tr>
+            </tr>   
         </thead>
         <tbody>
         </tbody>
