@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="author" content="Enrico">
+ <title>Atividade Jquery</title>
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <script src="./js/jquery-3.7.1.min.js"></script>
+ <script> 
+$(document).ready(function(){                 
+  $("#flip").click(function(){              
+    $("#panel").slideDown("slow");
+   });
+});
+
+$(document).ready(function(){
+ $("button").click(function(){
+   $("#p1").css("color", "black").slideUp(2000).slideDown(2000); 
+  });
+});
+ </script>
+ <style>
+  div{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 500;
+   
+  }
+  #panel, #flip {
+   padding: 5px;
+   text-align: center;
+   background-color: indigo;
+   border:solid 1px white;
+  }
+
+  #panel {
+   padding: 50px;
+   display:none;
+  }
+
+  img{
+   text-align: center;
+   border-radius: 5px;
+   border: 3px solid white;
+   max-width: 100%;
+   height: auto;
+  }
+
+  p{ 
+   text-align: center;
+  }
+  button{
+   text-align: center;
+   background-color: black;
+  }
+ </style>
+</head>
+<body>
+    <p id="p1">PWI - Jquery</p>
+    <button>⭕</button>
+
+    <div id="flip">Clique para o painel descer</div>
+    <div id="panel"><img src="./img/images.jpg" alt="Moto"></div>
+ <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
